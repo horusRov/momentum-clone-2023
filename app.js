@@ -1,37 +1,32 @@
-const daysOfWeek = ["mon", "tue", "wed", "thu", "fri", "sat"];
+function helloMyName(nameOfPerson){
+    console.log("Hello, my name is " + nameOfPerson + ".");
+}
 
-// Get Item from Array
-console.log(daysOfWeek);
-//Add one more day to the array
-daysOfWeek.push("sun");
+helloMyName("Nate");
+helloMyName("Miklos");
+helloMyName("Grace");
+helloMyName("David");
+helloMyName("Michael");
+helloMyName("Cindy");
 
-console.log(daysOfWeek);
+function plus (firstNumber, secondNumber) {
+    console.log(firstNumber + secondNumber)
+}
 
-/*const playerName = "archaon";
-const playerLevels = 99;
-const playerHansome = true;
-const playerFat = "No";
+function devide (a, b) {
+    console.log(a/b);
+}
 
-const player = ["archaon", 99, true, "no"]; */
-
+plus(8, 60);
+devide(24, 6);
 
 const player = {
-    name:"archaon",
-    levels: 99,
-    hansome: true,
-    fat: "no",
+    name: "nate",
+    sayHello: function(otherPersonsName){
+        console.log("Hello " + otherPersonsName + ". " + " Nice to meet you!");
+    },
 };
 
-console.log(player);
-
-player.fat = "yes";
-
-console.log(player);
-
-player.lastName = "everchosen"
-
-console.log(player);
-
-player.levels = 100;
-
-console.log(player);
+console.log(player.name);
+player.sayHello("Miklos");
+player.sayHello("Grace");
