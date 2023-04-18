@@ -30,3 +30,19 @@ const player = {
 console.log(player.name);
 player.sayHello("Miklos");
 player.sayHello("Grace");
+
+function plus (men, women){
+    console.log(men + women);
+}
+
+plus(4,5);
+
+const calculator = {
+    add: function(a,b) {
+        console.log(a+b);
+    },
+};
+
+calculator.add(5,1);
+calculator.add(5,1);
+
