@@ -38,11 +38,37 @@ function plus (men, women){
 plus(4,5);
 
 const calculator = {
-    add: function(a,b) {
-        console.log(a+b);
+    plus: function(a,b) {
+       return a + b;
     },
+
+    minus: function(a,b) {
+        return a - b;
+    },
+
+    times: function(a,b) {
+        return a * b;
+    },
+
+    divide: function(a,b) {
+        return a / b;
+    },
+
 };
 
-calculator.add(5,1);
-calculator.add(5,1);
+const plusResult = calculator.plus(5,1);
+const minusResult = calculator.minus(plusResult,1);
+const timesResult = calculator.times(1, minusResult);
+const divideResult = calculator.divide(plusResult, timesResult);
 
+
+
+
+const age = 38;
+function calculateKrAge(ageOfForeigner) {
+   return ageOfForeigner + 2;
+}
+
+const krAge = calculateKrAge(age);
+
+console.log(krAge);
